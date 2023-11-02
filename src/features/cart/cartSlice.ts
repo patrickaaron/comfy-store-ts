@@ -47,6 +47,7 @@ export const cartSlice = createSlice({
 
       toast.success("Item added to cart");
     },
+    // @ts-ignore
     clearCart: (state) => {
       localStorage.removeItem("cart");
       /* You should not directly assign a new object to the state parameter */
